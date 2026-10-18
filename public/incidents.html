@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incidents - IsItDown</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/service-picker.css" />
+    <link rel="stylesheet" href="/css/incidents.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>IsItDown</h1>
+      <p>Community outage board for public APIs</p>
+    </header>
+
+    <main>
+      <section class="panel" aria-labelledby="form-heading">
+        <h2 id="form-heading">Report an incident</h2>
+        <form id="incident-form">
+          <input type="hidden" id="incident-id" />
+
+          <div class="field">
+            <label for="form-service-search">Find a service</label>
+            <input
+              type="search"
+              id="form-service-search"
+              placeholder="Search services by name"
+              autocomplete="off"
+            />
+            <label for="form-service">Service</label>
+            <select id="form-service" required></select>
+          </div>
+
+          <div class="field">
+            <label for="title">Title</label>
+            <input type="text" id="title" maxlength="120" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="severity">Severity</label>
+              <select id="severity" required>
+                <option value="minor">Minor</option>
+                <option value="major">Major</option>
+                <option value="critical">Critical</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="status">Status</label>
+              <select id="status" required>
+                <option value="investigating">Investigating</option>
+                <option value="identified">Identified</option>
+                <option value="resolved">Resolved</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="started-at">Started at</label>
+              <input type="datetime-local" id="started-at" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="description">Description</label>
+            <textarea id="description" rows="4" maxlength="2000"></textarea>
+          </div>
+
+          <p id="form-message" class="message" role="status"></p>
+
+          <div class="actions">
+            <button type="submit" id="submit-button">Add incident</button>
+            <button type="button" id="cancel-button" class="secondary" hidden>
+              Cancel edit
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel" aria-labelledby="list-heading">
+        <h2 id="list-heading">Incidents</h2>
+
+        <form id="filters" class="filters">
+          <div class="field">
+            <label for="filter-service-search">Find a service</label>
+            <input
+              type="search"
+              id="filter-service-search"
+              placeholder="Search services by name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="field">
+            <label for="filter-service">Service</label>
+            <select id="filter-service"></select>
+          </div>
+          <div class="field">
+            <label for="filter-severity">Severity</label>
+            <select id="filter-severity">
+              <option value="">All severities</option>
+              <option value="minor">Minor</option>
+              <option value="major">Major</option>
+              <option value="critical">Critical</option>
+            </select>
+          </div>
+        </form>
+
+        <p id="list-message" class="message" role="status"></p>
+        <ul id="incident-list" class="incident-list"></ul>
+
+        <nav class="pager" aria-label="Incident pages">
+          <button type="button" id="prev-button" class="secondary">
+            Previous
+          </button>
+          <p id="page-info"></p>
+          <button type="button" id="next-button" class="secondary">Next</button>
+        </nav>
+      </section>
+    </main>
+
+    <script type="module" src="/js/incidents.js"></script>
+  </body>
+</html>
