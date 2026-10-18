@@ -25,17 +25,6 @@ body {
   line-height: 1.5;
 }
 
-.site-header {
-  padding: 1.25rem 1rem;
-  background: var(--text);
-  color: var(--surface);
-}
-
-.site-header h1,
-.site-header p {
-  margin: 0;
-}
-
 main {
   max-width: 60rem;
   margin: 0 auto;
@@ -124,4 +113,24 @@ button:disabled {
 
 .message.error {
   color: var(--danger);
+}
+
+.badge {
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.badge.minor {
+  background: #8a6d00;
+}
+
+.badge.major {
+  background: #c25400;
+}
+
+.badge.critical {
+  background: var(--danger);
 }

@@ -36,26 +36,6 @@
   font-size: 0.875rem;
 }
 
-.badge {
-  padding: 0.1rem 0.5rem;
-  border-radius: 1rem;
-  color: #ffffff;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-
-.badge.minor {
-  background: #8a6d00;
-}
-
-.badge.major {
-  background: #c25400;
-}
-
-.badge.critical {
-  background: var(--danger);
-}
-
 .pager {
   display: flex;
   align-items: center;

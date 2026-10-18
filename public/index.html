@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IsItDown - Community outage board for public APIs</title>
+    <meta
+      name="description"
+      content="IsItDown is a community outage board for public APIs. Check what other developers are seeing before you debug your own code."
+    />
+    <meta name="author" content="Rishabh Tiwari" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
+  </head>
+  <body>
+    <header class="site-nav"></header>
+
+    <main>
+      <section class="hero">
+        <h1>IsItDown</h1>
+        <p>
+          Is it your code or their API? Check what other developers are seeing.
+        </p>
+      </section>
+
+      <section class="cards" aria-label="Get started">
+        <article class="card">
+          <h2>Incident board</h2>
+          <p>Report an outage or browse what others have reported.</p>
+          <a class="button" href="/incidents.html">Open the board</a>
+        </article>
+        <article class="card">
+          <h2>My watchlist</h2>
+          <p>Keep an eye on the APIs your project depends on.</p>
+          <a class="button" href="/watchlist.html">Open my watchlist</a>
+        </article>
+      </section>
+
+      <section class="panel" aria-labelledby="latest-heading">
+        <h2 id="latest-heading">Latest incidents</h2>
+        <p id="stats" class="stats" role="status"></p>
+        <ul id="latest-incidents" class="latest-list"></ul>
+        <p id="latest-message" class="message" role="status"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>IsItDown by Rishabh Tiwari. Released under the MIT license.</p>
+    </footer>
+
+    <script type="module" src="/js/landing.js"></script>
+  </body>
+</html>

@@ -6,9 +6,12 @@ import {
   updateIncident,
 } from "./api.js";
 import { el } from "./dom.js";
+import { renderNav } from "./nav.js";
 import { createServicePicker } from "./service-picker.js";
 
 const PAGE_SIZE = 10;
+
+renderNav();
 
 const form = document.querySelector("#incident-form");
 const fields = {
