@@ -3,7 +3,7 @@
 A community outage board for public APIs. Browse a catalog of public APIs, then report, track, edit, and resolve incidents against them.
 
 **Author:** Rishabh Tiwari
-**Class:** [CLASS NAME - add class link here](https://example.com)
+**Class:** [Web Development (Online, Fall 2026)](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 
 ## Objective
 
