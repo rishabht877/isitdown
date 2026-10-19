@@ -99,7 +99,7 @@ Other scripts: `npm run seed:services`, `npm run seed:incidents`, `npm run seed:
 
 ## GenAI use
 
-Generative AI (Claude) was used to help scaffold the project structure, write the seed scripts, Express routes, and frontend modules, and draft this README. All generated code was reviewed, run, and tested by the author.
+Generative AI (Claude) was used for some assistance with code writing. All code was reviewed by hand, run, and tested by the authors. The design document, presentation, and all other written materials were written by the authors.
 
 ## License
 
