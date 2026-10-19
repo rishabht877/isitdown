@@ -13,6 +13,10 @@ Build a full-stack web app with Node, Express, and MongoDB (native driver, no Mo
 - `incidents`: user-reported outages with full create, read, update, and delete support (Rishabh).
 - `watchlist`: the services a developer is tracking, each with a status (`watching` or `worked around`) and notes. One entry per service, with full create, read, update, and delete support (Dins).
 
+## Design document
+
+See the [design document (PDF)](docs/DesignDoc.pdf) for the project description, user personas, user stories, and design mockups.
+
 ## Screenshot
 
 ### Home
