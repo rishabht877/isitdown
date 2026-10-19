@@ -2,7 +2,10 @@
 
 A community outage board for public APIs. Browse a catalog of public APIs, then report incidents against them and keep a watchlist of the APIs your project depends on.
 
+**Live site:** [https://isitdown-1cvt.onrender.com/](https://isitdown-1cvt.onrender.com/)
+
 **Authors:** Rishabh Tiwari, Dins Patel
+
 **Class:** [Web Development (Online, Fall 2026)](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 
 ## Objective
