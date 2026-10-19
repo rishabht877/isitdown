@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node --env-file=.env server.js",
-    "seed": "npm run seed:services && npm run seed:incidents",
+    "seed": "npm run seed:services && npm run seed:incidents && npm run seed:watchlist",
     "seed:services": "node --env-file=.env scripts/seed-services.js",
     "seed:incidents": "node --env-file=.env scripts/seed-incidents.js",
     "seed:watchlist": "node --env-file=.env scripts/seed-watchlist.js",
