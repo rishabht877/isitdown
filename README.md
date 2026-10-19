@@ -14,9 +14,13 @@ Build a full-stack web app with Node, Express, and MongoDB (native driver, no Mo
 
 ## Screenshot
 
-![IsItDown incidents page](docs/screenshot.png)
+### Home
 
-_Screenshot placeholder: add `docs/screenshot.png` after running the app._
+![IsItDown home page](docs/home.png)
+
+### Incident board
+
+![IsItDown incident board](docs/incidentboard.png)
 
 ## Tech
 
