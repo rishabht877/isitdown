@@ -2,6 +2,7 @@ import express from "express";
 import { fileURLToPath } from "node:url";
 import servicesRouter from "./routes/services.js";
 import incidentsRouter from "./routes/incidents.js";
+import watchlistRouter from "./routes/watchlist.js";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -12,6 +13,7 @@ app.use(express.static(publicDir));
 
 app.use("/api/services", servicesRouter);
 app.use("/api/incidents", incidentsRouter);
+app.use("/api/watchlist", watchlistRouter);
 
 app.use("/api", (req, res) => {
   res.status(404).json({ errors: ["Not found"] });

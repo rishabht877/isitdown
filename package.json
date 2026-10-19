@@ -9,6 +9,7 @@
     "seed": "npm run seed:services && npm run seed:incidents",
     "seed:services": "node --env-file=.env scripts/seed-services.js",
     "seed:incidents": "node --env-file=.env scripts/seed-incidents.js",
+    "seed:watchlist": "node --env-file=.env scripts/seed-watchlist.js",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
